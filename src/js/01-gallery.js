@@ -6,7 +6,6 @@ const galleryContainerRef = document.querySelector('.gallery');
 const markup = createMarkup(galleryItems);
 
 galleryContainerRef.insertAdjacentHTML('beforeend', markup);
-console.log(galleryContainerRef);
 
 function createMarkup(items) {
   return items
@@ -23,4 +22,8 @@ let lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionsPosition: 'bottom',
   captionsDelay: 250,
+});
+
+lightbox.on('show.simplelightbox', function () {
+  console.log('test');
 });
