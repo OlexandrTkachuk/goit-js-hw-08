@@ -24,5 +24,3 @@ let lightbox = new SimpleLightbox('.gallery a', {
   captionsPosition: 'bottom',
   captionsDelay: 250,
 });
-
-// lightbox.on('show.simplelightbox', function () {});
